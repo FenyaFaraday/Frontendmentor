@@ -32,6 +32,9 @@ p {
     place-content: center;
     max-width: 20em;
     font-size: 15px;
+    background-color: var(--white);
+    padding: 1em;
+    border-radius: 1rem;
 }
 
 /* .item {
