@@ -15,28 +15,40 @@ body {
     min-height: 100vh;
 }
 
+h1, p {
+    font-size: 15px;
+    text-align: center;
+    margin-left: .75rem;
+    margin-top: .75rem;
+    margin-right: .75rem;
+}
+
+p {
+    margin-bottom: 1rem;
+}
+
 .container {
     display: inline-block;
     place-content: center;
-    width: 20em;
+    max-width: 20em;
     font-size: 15px;
 }
 
-.item {
+/* .item {
     padding: .75rem;
     background: var(--white);
     border-radius: 1rem;
-}
+} */
 
 img {
     border-radius: .5rem;
-    width: 100%;
+    max-width: 100%;
 }
 
-.text-position {
+/* .text-position {
     text-align: center;
     margin: 0.65rem;
-}
+} */
 
 .header {
     color: var(--darkblue);
@@ -47,7 +59,6 @@ img {
 .text {
     color: var(--grayishblue);
     font-weight: 400;
-    margin: 1rem;
 }
 
 .bold-text {
