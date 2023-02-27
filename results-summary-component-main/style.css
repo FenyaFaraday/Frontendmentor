@@ -1,0 +1,153 @@
+@import url(https://fonts.googleapis.com/css?family=Hanken+Grotesk);
+
+:root {
+    /* Primary colors */
+    --red: hsl(0, 100%, 67%);
+    --redLight: hsla(0, 100%, 67%, 0.2);
+    --oraYellow: hsl(39, 100%, 56%);
+    --oraYellowLight: hsla(39, 100%, 56%, 0.2);
+    --greenTeal: hsl(166, 100%, 37%);
+    --greenTealLight: hsla(166, 100%, 37%, 0.2);
+    --cobaltBlue: hsl(234, 85%, 45%);
+    --cobaltBlueLight: hsla(234, 85%, 45%, 0.2);
+
+    /* Gradients */
+    --slateBlue: hsl(252, 100%, 67%);
+    --royalBlue: hsl(241, 81%, 54%);
+    --violetBlue: hsla(256, 72%, 46%, 1);
+    --persianBlue: hsla(241, 72%, 46%, 0);
+
+    /* Neutral */
+    --white: hsl(0, 0%, 100%);
+    --paleBlue: hsl(221, 100%, 96%);
+    --lightLavender: hsl(241, 100%, 89%);
+    --darkGrayBlue: hsl(224, 30%, 27%);
+}
+
+body {
+    display: grid;
+    place-items: center;
+    min-height: 100vh;
+}
+
+.text-style {
+    font-size: 18px;
+    font-family: 'Hanken Grotesk';
+}
+
+.text-bold {
+    font-weight: 800;
+}
+
+.text-medium {
+    font-weight: 700;
+}
+
+.text-thin {
+    font-weight: 500;
+}
+
+.header-text {
+    font-size: 1em;
+    margin-top: 2em;
+    margin-bottom: 2em;
+}
+
+.white-text {
+    color: var(--white);
+}
+
+.big-text {
+    color: var(--white);
+    font-size: 3em;
+}
+
+.container {
+    display: inline-block;
+    place-content: center;
+}
+
+.wrapper {
+    display: flex;
+    border-radius: 2rem;
+    background-color: var(--white);
+    box-shadow: .5em .5em 2em var(--lightLavender);
+    color: var(--lightLavender);
+}
+
+.wrapper-left {
+    display: flex;
+    flex-direction: column;
+    background-image: linear-gradient(var(--slateBlue), var(--royalBlue));
+    border-radius: 2rem;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+}
+
+.circle {
+    border-radius: 50%;
+    background-image: linear-gradient(var(--violetBlue), var(--persianBlue));
+    width: 8em;
+    height: 8em;
+    text-align: center;
+}
+
+.circle p {
+    font-size: .7em;
+    color: var(--lightLavender);
+    margin-top: 0;
+}
+
+.circle h1 {
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+
+.description {
+    text-align: center;
+    font-size: .8em;
+    margin-bottom: 3em;
+    margin-left: 3em;
+    margin-right: 3em;
+}
+
+.wrapper-right {
+    display: flex;
+    color: var(--darkGrayBlue);
+    flex-direction: column;
+    padding: 2em;
+    width: 50%;
+    gap: 1em;
+}
+
+.wrapper-right>h1 {
+    text-align: left;
+}
+
+.card {
+    border-radius: .5em;
+    font-size: 1em;
+    padding: .5rem;
+    display: flex;
+}
+
+.red {
+    background: var(--redLight);
+    color: var(--red);
+}
+
+.yellow {
+    background: var(--oraYellowLight);
+    color: var(--oraYellow);
+}
+
+.green {
+    background: var(--greenTealLight);
+    color: var(--greenTeal);
+}
+
+.blue {
+    background: var(--cobaltBlueLight);
+    color: var(--cobaltBlue);
+}
